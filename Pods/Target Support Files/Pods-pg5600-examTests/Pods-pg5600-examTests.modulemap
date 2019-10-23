@@ -1,0 +1,6 @@
+framework module Pods_pg5600_examTests {
+  umbrella header "Pods-pg5600-examTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
