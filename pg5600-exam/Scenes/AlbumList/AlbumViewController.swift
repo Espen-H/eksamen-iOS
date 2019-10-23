@@ -31,18 +31,17 @@ class AlbumViewController: UICollectionViewController {
         })
     }
 
-    // MARK: UICollectionViewDataSource
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return albumData?.count ?? 0
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.pushViewController(AlbumDetailsViewController(), animated: true)
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! albumCell
     
-        
         guard let album = albumData?[indexPath.row] else { return UICollectionViewCell() }
         cell.configure(with: album)
         return cell

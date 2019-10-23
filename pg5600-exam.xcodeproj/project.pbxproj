@@ -10,10 +10,12 @@
 		124F23AB618C5B156CDEDD1B /* Pods_pg5600_exam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE23E9EC41A3042AD4E1677B /* Pods_pg5600_exam.framework */; };
 		76ED23A965DAB51C8B3E0359 /* Pods_pg5600_exam_pg5600_examUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93BEE860755C7D395CBBDBC /* Pods_pg5600_exam_pg5600_examUITests.framework */; };
 		DE63FF7AC61A816177FD6842 /* Pods_pg5600_examTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C0C62EFEE07EDC04B52AC /* Pods_pg5600_examTests.framework */; };
+		E84CEED2236087D500DE787C /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED1236087D500DE787C /* AlbumDetailsViewController.swift */; };
+		E84CEED42360881700DE787C /* AlbumTracklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED32360881700DE787C /* AlbumTracklistCell.swift */; };
+		E84CEED62360885700DE787C /* AlbumDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED52360885700DE787C /* AlbumDetailsModel.swift */; };
 		E8A0BD0F235495030041F9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BD0E235495030041F9E8 /* AppDelegate.swift */; };
 		E8A0BD14235495030041F9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A0BD12235495030041F9E8 /* Main.storyboard */; };
 		E8A0BD19235495060041F9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A0BD18235495060041F9E8 /* Assets.xcassets */; };
-		E8A0BD1C235495060041F9E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A0BD1A235495060041F9E8 /* LaunchScreen.storyboard */; };
 		E8A0BD27235495070041F9E8 /* pg5600_examTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BD26235495070041F9E8 /* pg5600_examTests.swift */; };
 		E8A0BD32235495070041F9E8 /* pg5600_examUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BD31235495070041F9E8 /* pg5600_examUITests.swift */; };
 		E8A8888B235B36FA0069ED76 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A8888A235B36FA0069ED76 /* AlbumViewController.swift */; };
@@ -48,11 +50,13 @@
 		A7D34F4A891DD4A9F1B0473B /* Pods-pg5600-exam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg5600-exam.debug.xcconfig"; path = "Target Support Files/Pods-pg5600-exam/Pods-pg5600-exam.debug.xcconfig"; sourceTree = "<group>"; };
 		C77E1BFA5F9F42897DDBE25F /* Pods-pg5600-examTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg5600-examTests.debug.xcconfig"; path = "Target Support Files/Pods-pg5600-examTests/Pods-pg5600-examTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCC3B1CAE8AFBA5974B70168 /* Pods-pg5600-examTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pg5600-examTests.release.xcconfig"; path = "Target Support Files/Pods-pg5600-examTests/Pods-pg5600-examTests.release.xcconfig"; sourceTree = "<group>"; };
+		E84CEED1236087D500DE787C /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
+		E84CEED32360881700DE787C /* AlbumTracklistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTracklistCell.swift; sourceTree = "<group>"; };
+		E84CEED52360885700DE787C /* AlbumDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsModel.swift; sourceTree = "<group>"; };
 		E8A0BD0B235495030041F9E8 /* pg5600-exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pg5600-exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0BD0E235495030041F9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A0BD13235495030041F9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8A0BD18235495060041F9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8A0BD1B235495060041F9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A0BD1D235495060041F9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A0BD22235495070041F9E8 /* pg5600-examTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pg5600-examTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0BD26235495070041F9E8 /* pg5600_examTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pg5600_examTests.swift; sourceTree = "<group>"; };
@@ -120,6 +124,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E84CEED02360879100DE787C /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E84CEED1236087D500DE787C /* AlbumDetailsViewController.swift */,
+				E84CEED32360881700DE787C /* AlbumTracklistCell.swift */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+		E84CEED7236089B400DE787C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		E8612926235B69D4001E7C8C /* AlbumList */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +182,6 @@
 				E8A8889C235B5CED0069ED76 /* Services */,
 				E8A8889B235B5CD80069ED76 /* Models */,
 				E8A0BD12235495030041F9E8 /* Main.storyboard */,
-				E8A0BD1A235495060041F9E8 /* LaunchScreen.storyboard */,
 			);
 			path = "pg5600-exam";
 			sourceTree = "<group>";
@@ -189,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				E8A88893235B41890069ED76 /* AlbumModel.swift */,
+				E84CEED52360885700DE787C /* AlbumDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +224,8 @@
 		E8A8889D235B5CF40069ED76 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E84CEED7236089B400DE787C /* Favorites */,
+				E84CEED02360879100DE787C /* AlbumDetails */,
 				E8612926235B69D4001E7C8C /* AlbumList */,
 			);
 			path = Scenes;
@@ -318,7 +340,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A0BD1C235495060041F9E8 /* LaunchScreen.storyboard in Resources */,
 				E8A0BD19235495060041F9E8 /* Assets.xcassets in Resources */,
 				E8A0BD14235495030041F9E8 /* Main.storyboard in Resources */,
 			);
@@ -448,12 +469,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84CEED62360885700DE787C /* AlbumDetailsModel.swift in Sources */,
 				E8A8889A235B464C0069ED76 /* AlbumDataModel.xcdatamodeld in Sources */,
 				E8A88894235B41890069ED76 /* AlbumModel.swift in Sources */,
 				E8A8889F235B5D1E0069ED76 /* AlbumService.swift in Sources */,
 				E8A0BD0F235495030041F9E8 /* AppDelegate.swift in Sources */,
 				E8A8888B235B36FA0069ED76 /* AlbumViewController.swift in Sources */,
+				E84CEED42360881700DE787C /* AlbumTracklistCell.swift in Sources */,
 				E8A88892235B410D0069ED76 /* albumCell.swift in Sources */,
+				E84CEED2236087D500DE787C /* AlbumDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,14 +519,6 @@
 				E8A0BD13235495030041F9E8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8A0BD1A235495060041F9E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8A0BD1B235495060041F9E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

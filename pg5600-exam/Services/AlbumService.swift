@@ -22,6 +22,21 @@ class AlbumService {
             }
     }
     
+    func getSpecificAlbum(album: String, completion: @escaping ([AlbumDetailsModel]?) -> Void) {
+        Alamofire.request("theaudiodb.com/api/v1/json/1/searchalbum.php?a=\(album)")
+            .validate().response { response in
+                guard let data = response.data else { return }
+                do {
+                    let album = try JSONDecoder().decode(Album.self, from: data)
+                    completion(album.album)
+                } catch {
+                    print(error)
+                }
+        }
+    }
+    
+   // func getAlbumTracks(completion: @escaping ([AlbumModel]?) -> Void) { }
+    
     func getTopAlbums(completion: @escaping ([AlbumModel]?) -> Void) {
         Alamofire.request("https://theaudiodb.com/api/v1/json/1/mostloved.php?format=album")
             .validate()
@@ -30,12 +45,9 @@ class AlbumService {
                 print("Error fetching data from api")
                 return
             }
-                guard let albums = response.result.value as? LovedAlbums else {
-                    return
-                }
+                guard let albums = response.result.value as? LovedAlbums else {return}
                 
                 albums.loved.forEach { print($0.strAlbum ) }
-                
                 completion(albums.loved)
         }
     }

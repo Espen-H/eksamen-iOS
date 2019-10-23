@@ -28,6 +28,4 @@ class albumCell: UICollectionViewCell {
         albumName.text = model.strAlbum
         artistName.text = model.strArtist
     }
-    
-    
 }
