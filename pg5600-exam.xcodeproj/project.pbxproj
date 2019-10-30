@@ -13,6 +13,7 @@
 		E84CEED2236087D500DE787C /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED1236087D500DE787C /* AlbumDetailsViewController.swift */; };
 		E84CEED42360881700DE787C /* AlbumTracklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED32360881700DE787C /* AlbumTracklistCell.swift */; };
 		E84CEED62360885700DE787C /* AlbumDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED52360885700DE787C /* AlbumDetailsModel.swift */; };
+		E84CEED92369E72B00DE787C /* AlbumDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CEED82369E72B00DE787C /* AlbumDetailsView.swift */; };
 		E8A0BD0F235495030041F9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BD0E235495030041F9E8 /* AppDelegate.swift */; };
 		E8A0BD14235495030041F9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A0BD12235495030041F9E8 /* Main.storyboard */; };
 		E8A0BD19235495060041F9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A0BD18235495060041F9E8 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		E84CEED1236087D500DE787C /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
 		E84CEED32360881700DE787C /* AlbumTracklistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTracklistCell.swift; sourceTree = "<group>"; };
 		E84CEED52360885700DE787C /* AlbumDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsModel.swift; sourceTree = "<group>"; };
+		E84CEED82369E72B00DE787C /* AlbumDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsView.swift; sourceTree = "<group>"; };
 		E8A0BD0B235495030041F9E8 /* pg5600-exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pg5600-exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0BD0E235495030041F9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A0BD13235495030041F9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				E84CEED1236087D500DE787C /* AlbumDetailsViewController.swift */,
 				E84CEED32360881700DE787C /* AlbumTracklistCell.swift */,
+				E84CEED82369E72B00DE787C /* AlbumDetailsView.swift */,
 			);
 			path = AlbumDetails;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84CEED62360885700DE787C /* AlbumDetailsModel.swift in Sources */,
+				E84CEED92369E72B00DE787C /* AlbumDetailsView.swift in Sources */,
 				E8A8889A235B464C0069ED76 /* AlbumDataModel.xcdatamodeld in Sources */,
 				E8A88894235B41890069ED76 /* AlbumModel.swift in Sources */,
 				E8A8889F235B5D1E0069ED76 /* AlbumService.swift in Sources */,
