@@ -22,14 +22,12 @@ class AlbumViewController: UICollectionViewController {
         super.viewDidLoad()
         collectionView.bounds.inset(by: sectionInsets)
         collectionView.layoutIfNeeded()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         AlbumService().getTop(completion: { albums in
             self.albumData = albums
             self.collectionView.reloadData()
         })
     }
+    
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albumData?.count ?? 0
