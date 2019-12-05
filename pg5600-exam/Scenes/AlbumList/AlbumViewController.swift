@@ -34,7 +34,11 @@ class AlbumViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigationController?.pushViewController(AlbumDetailsViewController(), animated: true)
+        let album = albumData?[indexPath.item]
+        let vc = AlbumDetailsViewController()
+        vc.albumName = album?.strAlbum
+        vc.albumArtist = album?.strArtist
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,6 +48,7 @@ class AlbumViewController: UICollectionViewController {
         cell.configure(with: album)
         return cell
     }
+    
 
 
 

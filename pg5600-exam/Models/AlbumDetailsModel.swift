@@ -9,16 +9,15 @@
 
 import UIKit
 
-struct Album: Decodable {
+struct DetailsAlbum: Decodable {
     let album: [AlbumDetailsModel]
 }
 
 struct AlbumDetailsModel: Decodable {
     
-    let strAlbumThumb: String
+    let idAlbum: String
     let strAlbum: String
     let strArtist: String
-    let intYearReleased: Int
-    // #TODO Add Tracklist from API with track name and length
-    
+    let intYearReleased: String
+    let strAlbumThumb: String
 }

@@ -8,19 +8,44 @@
 
 import Foundation
 import UIKit
+import Kingfisher
+
 
 class AlbumDetailsViewController : UIViewController {
-    var albumData: [AlbumDetailsModel]?
+    var albumName: String?
+    var albumArtist: String?
+    var albumDetailsData: [AlbumDetailsModel]?
+    var detailsView = AlbumDetailsView()
+
     
     override func loadView() {
-        super.view = AlbumDetailsView()
+        super.view = detailsView
     }
     
+
+  override func viewDidLoad() {
+    getAlbumDetails()
+}
     
-  /*  override func viewDidAppear(_ animated: Bool) {
-        AlbumService().getSpecificAlbum(album: albumName, completion: { album in
-            self.albumData = album
-        }) */
     
+    func getAlbumDetails() {
+      AlbumService().getSpecificAlbum(
+        artist: self.albumArtist!,
+        album: self.albumName!,
+        completion: { album in
+            self.albumDetailsData = album
+            self.updateViewWithData()
+      })
+    }
     
+    func updateViewWithData() {
+        guard let albumDetails: AlbumDetailsModel = self.albumDetailsData?.first else {print("error updateViewWithData"); return}
+        detailsView.albumNameLabel.text = albumDetails.strAlbum
+        detailsView.albumPublishingYear.text = albumDetails.intYearReleased
+        detailsView.artistNameLabel.text = albumDetails.strArtist
+        if let imageUrl = URL(string: albumDetails.strAlbumThumb) {
+            detailsView.albumImage.kf.setImage(with: imageUrl)
+        }
+        self.view.setNeedsDisplay()
+    }
 }

@@ -10,7 +10,6 @@ target 'pg5600-exam' do
   pod 'Alamofire', '~> 4'
   pod 'Kingfisher', '~> 4'
   
-  pod 'SwiftFormat/CLI'
   
   SWIFT_VERSION = '4.2'
 

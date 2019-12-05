@@ -52,19 +52,25 @@ class AlbumDetailsView: UIView {
         
         albumImage.backgroundColor = .red
         
-        albumNameLabel.backgroundColor = .blue
-        albumNameLabel.font = albumNameLabel.font.withSize(35)
-        albumNameLabel.text = "Test album"
-        albumNameLabel.textAlignment = .center
+        artistNameLabel.font = artistNameLabel.font.withSize(16)
+        artistNameLabel.textAlignment = .left
+        artistNameLabel.numberOfLines = 1
+        artistNameLabel.minimumScaleFactor = 0.1
+        artistNameLabel.adjustsFontSizeToFitWidth = true
         
-        artistNameLabel.backgroundColor = .green
-        artistNameLabel.text = "test Artist"
-        artistNameLabel.font = artistNameLabel.font.withSize(35)
+        albumNameLabel.font = albumNameLabel.font.withSize(16)
+        albumNameLabel.textAlignment = .center
+        albumNameLabel.numberOfLines = 1
+        albumNameLabel.minimumScaleFactor = 0.1
+        albumNameLabel.adjustsFontSizeToFitWidth = true
 
-        albumPublishingYear.backgroundColor = .purple
-        albumPublishingYear.text = "1993"
-        albumPublishingYear.font = albumPublishingYear.font.withSize(35)
+        albumPublishingYear.font = albumPublishingYear.font.withSize(16)
         albumPublishingYear.textAlignment = .right
+        albumPublishingYear.numberOfLines = 1
+        albumPublishingYear.minimumScaleFactor = 0.1
+        albumPublishingYear.adjustsFontSizeToFitWidth = true
+        
+        
     }
     
     func layoutSetup() {
