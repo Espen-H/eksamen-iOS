@@ -7,7 +7,7 @@ Top 50 albums
 
 Detailed album page
 
-Favorite tracks list with the ability to add/remove tracks.
+Favorite tracklist with the ability to add/remove tracks.
 
 ## Not completed features:
 Different presentation of same data:
