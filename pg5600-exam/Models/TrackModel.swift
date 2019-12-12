@@ -8,12 +8,14 @@
 
 import UIKit
 
-struct Tracks: Decodable {
-    let tracks: [Tracks]
+struct TrackList: Decodable {
+    let track: [TrackListModel]
 }
 
-struct TrackList: Decodable {
+struct TrackListModel: Decodable {
     
-    
+    let strTrack: String
+    let intDuration: String
+    let strAlbum: String
     
 }

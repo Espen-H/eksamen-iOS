@@ -9,16 +9,11 @@
 import UIKit
 
 class AlbumDetailsView: UIView {
-    
-    
     var albumImage: UIImageView!
     var albumNameLabel: UILabel!
     var artistNameLabel: UILabel!
     var albumPublishingYear: UILabel!
     var trackListTableView: UITableView!
-    
-    
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,19 +25,20 @@ class AlbumDetailsView: UIView {
         self.init(frame: UIScreen.main.bounds)
         viewSetup()
         layoutSetup()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func viewSetup() {
-        albumImage = UIImageView.init(frame: .zero)
-        albumNameLabel = UILabel.init(frame: .zero)
-        artistNameLabel = UILabel.init(frame: .zero)
-        albumPublishingYear = UILabel.init(frame: .zero)
-        trackListTableView = UITableView.init(frame: .zero)
+  
+    
+    private func viewSetup() {
+        albumImage = UIImageView(frame: .zero)
+        albumNameLabel = UILabel(frame: .zero)
+        artistNameLabel = UILabel(frame: .zero)
+        albumPublishingYear = UILabel(frame: .zero)
+        trackListTableView = UITableView(frame: .zero)
         
         self.addSubview(albumImage)
         self.addSubview(albumNameLabel)
@@ -69,11 +65,9 @@ class AlbumDetailsView: UIView {
         albumPublishingYear.numberOfLines = 1
         albumPublishingYear.minimumScaleFactor = 0.1
         albumPublishingYear.adjustsFontSizeToFitWidth = true
-        
-        
     }
     
-    func layoutSetup() {
+    private func layoutSetup() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
         albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
         artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -110,6 +104,15 @@ class AlbumDetailsView: UIView {
             ])
     }
     
-    
+    func populate(with viewModel: AlbumDetailsModel) {
+        albumNameLabel.text = viewModel.strAlbum
+        albumPublishingYear.text = viewModel.intYearReleased
+        artistNameLabel.text = viewModel.strArtist
+        if let imageUrl = URL(string: viewModel.strAlbumThumb) {
+            albumImage.kf.setImage(with: imageUrl)
+        }
+
+        setNeedsDisplay()
+    }
 }
 

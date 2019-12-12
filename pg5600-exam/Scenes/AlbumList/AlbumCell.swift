@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 import Foundation
 
-class albumCell: UICollectionViewCell {
+class AlbumCell: UICollectionViewCell {
    
     @IBOutlet var image: UIImageView!
     @IBOutlet var albumName: UILabel!

@@ -35,16 +35,16 @@ class AlbumService {
             }
     }
     
-    func getSpecificAlbum(artist: String, album: String, completion: @escaping ([AlbumDetailsModel]?) -> Void) {
+    func getSpecificAlbum(artist: String, album: String, completion: @escaping (AlbumDetailsModel?) -> Void) {
         let urlArtist = artist.replacingOccurrences(of: " ", with: "%20")
         let urlAlbum = album.replacingOccurrences(of: " ", with: "%20")
          let urlRequest: String = "https://theaudiodb.com/api/v1/json/1/searchalbum.php?s=\(urlArtist)&a=\(urlAlbum)"
-        Alamofire.request(urlRequest).debugLog()
+        Alamofire.request(urlRequest)
             .validate().response { response in
                 guard let data = response.data else { return }
                 do {
                     let album = try JSONDecoder().decode(DetailsAlbum.self, from: data)
-                    completion(album.album)
+                    completion(album.album.first)
                 } catch {
                     print(error)
                 }
@@ -52,31 +52,18 @@ class AlbumService {
         
     }
     
-    /*
-    func getAlbumTracks(trackId: String, completion: @escaping ([TrackModel]?) -> Void) {
-    Alamofire.request("https://theaudiodb.com/api/v1/json/1/track.php?m=\(trackId)")
+    func getAlbumTracks(albumId: String, completion: @escaping ([TrackListModel]?) -> Void) {
+    Alamofire.request("https://theaudiodb.com/api/v1/json/1/track.php?m=\(albumId)").debugLog()
         .validate().response { response in
-        guard let data = respone.data else {return}
+        guard let data = response.data else { return }
         do {
-            let tracks = try JSONDecoder().decode(, from: <#T##Data#>)
-        }
-        
+            let tracks = try JSONDecoder().decode(TrackList.self, from: data)
+            completion(tracks.track)
+        } catch {
+            print(error)
+            }
         }
     
 }
     
-    func getTopAlbums(completion: @escaping ([AlbumModel]?) -> Void) {
-        Alamofire.request("https://theaudiodb.com/api/v1/json/1/mostloved.php?format=album")
-            .validate()
-            .responseJSON { response in
-            guard response.result.isSuccess else {
-                print("Error fetching data from api")
-                return
-            }
-                guard let albums = response.result.value as? LovedAlbums else {return}
-                
-                albums.loved.forEach { print($0.strAlbum ) }
-                completion(albums.loved)
-        }
-    } */
 }
