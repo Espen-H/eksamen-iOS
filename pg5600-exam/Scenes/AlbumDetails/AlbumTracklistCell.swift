@@ -58,8 +58,7 @@ class albumTrackListCell: UITableViewCell {
     }
 }
 
-// Converting duration to proper format taken from StackOverflow
-// https://stackoverflow.com/questions/30771820/swift-convert-milliseconds-into-minutes-seconds-and-milliseconds
+// Converting duration to proper format .. https://stackoverflow.com/questions/30771820/swift-convert-milliseconds-into-minutes-seconds-and-milliseconds
 extension TimeInterval {
     var minuteSecondMS: String {
         return String(format:"%d:%02d", minute, second)

@@ -1,24 +1,20 @@
 PODS:
-  - Alamofire (4.9.0)
+  - Alamofire (4.9.1)
   - Kingfisher (4.10.1)
-  - SwiftFormat/CLI (0.40.13)
 
 DEPENDENCIES:
   - Alamofire (~> 4)
   - Kingfisher (~> 4)
-  - SwiftFormat/CLI
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
-    - SwiftFormat
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  SwiftFormat: d548b3585a6dbe64390177b386e95375b8c300b6
 
-PODFILE CHECKSUM: 12061324da9527f54fc211c46895164d14e4e144
+PODFILE CHECKSUM: 884c4e10bee0c5a3b2d11c1384889c58c9ae45e8
 
 COCOAPODS: 1.8.4
