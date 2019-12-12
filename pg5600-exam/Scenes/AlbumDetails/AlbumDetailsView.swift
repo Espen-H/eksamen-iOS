@@ -31,7 +31,7 @@ class AlbumDetailsView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-  
+    
     
     private func viewSetup() {
         albumImage = UIImageView(frame: .zero)
@@ -45,7 +45,7 @@ class AlbumDetailsView: UIView {
         self.addSubview(artistNameLabel)
         self.addSubview(albumPublishingYear)
         self.addSubview(trackListTableView)
-                
+        
         artistNameLabel.font = artistNameLabel.font.withSize(16)
         artistNameLabel.textAlignment = .left
         artistNameLabel.numberOfLines = 1
@@ -57,7 +57,7 @@ class AlbumDetailsView: UIView {
         albumNameLabel.numberOfLines = 1
         albumNameLabel.minimumScaleFactor = 0.1
         albumNameLabel.adjustsFontSizeToFitWidth = true
-
+        
         albumPublishingYear.font = albumPublishingYear.font.withSize(16)
         albumPublishingYear.textAlignment = .right
         albumPublishingYear.numberOfLines = 1
@@ -109,7 +109,7 @@ class AlbumDetailsView: UIView {
         if let imageUrl = URL(string: viewModel.strAlbumThumb) {
             albumImage.kf.setImage(with: imageUrl)
         }
-
+        
         setNeedsDisplay()
     }
 }

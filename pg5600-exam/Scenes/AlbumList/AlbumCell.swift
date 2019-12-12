@@ -11,7 +11,7 @@ import Kingfisher
 import Foundation
 
 class AlbumCell: UICollectionViewCell {
-   
+    
     @IBOutlet var image: UIImageView!
     @IBOutlet var albumName: UILabel!
     @IBOutlet var artistName: UILabel!

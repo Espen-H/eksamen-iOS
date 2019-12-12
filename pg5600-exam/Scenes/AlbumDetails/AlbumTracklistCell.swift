@@ -43,9 +43,9 @@ class albumTrackListCell: UITableViewCell {
         addSubview(trackName)
         addSubview(trackLength)
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackName]))
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackName]))
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackLength]))
-         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackLength]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackName]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackLength]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": trackLength]))
     }
     
     public func configure(model: TrackListModel){
@@ -53,7 +53,7 @@ class albumTrackListCell: UITableViewCell {
         trackLength.text = convertTime(model.intDuration) // convert Mili to MM:SS #TODO
     }
     
-     func convertTime(_ numberString: String) -> String {
+    func convertTime(_ numberString: String) -> String {
         return Int(numberString)?.msToSeconds.minuteSecondMS ?? "Error"
     }
 }
@@ -69,7 +69,7 @@ extension TimeInterval {
     var second: Int {
         return Int(truncatingRemainder(dividingBy: 60))
     }
- 
+    
 }
 
 extension Int {

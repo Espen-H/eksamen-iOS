@@ -15,7 +15,7 @@ private let sectionInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
 
 
 class AlbumViewController: UICollectionViewController {
-
+    
     var albumData: [AlbumModel]?
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class AlbumViewController: UICollectionViewController {
         })
     }
     
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albumData?.count ?? 0
     }
@@ -40,16 +40,16 @@ class AlbumViewController: UICollectionViewController {
         vc.albumArtist = album?.strArtist
         navigationController?.pushViewController(vc, animated: true)
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AlbumCell
-    
+        
         guard let album = albumData?[indexPath.row] else { return UICollectionViewCell() }
         cell.configure(with: album)
         return cell
     }
     
-
-
-
+    
+    
+    
 }
