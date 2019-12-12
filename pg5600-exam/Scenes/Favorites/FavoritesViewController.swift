@@ -31,6 +31,12 @@ class FavoritesViewController: UITableViewController {
         self.fetchData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchData()
+        tableView.reloadData()
+    }
+    
     func fetchData() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext

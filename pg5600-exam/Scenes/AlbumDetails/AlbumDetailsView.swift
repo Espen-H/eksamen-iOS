@@ -45,9 +45,7 @@ class AlbumDetailsView: UIView {
         self.addSubview(artistNameLabel)
         self.addSubview(albumPublishingYear)
         self.addSubview(trackListTableView)
-        
-        albumImage.backgroundColor = .red
-        
+                
         artistNameLabel.font = artistNameLabel.font.withSize(16)
         artistNameLabel.textAlignment = .left
         artistNameLabel.numberOfLines = 1

@@ -6,19 +6,6 @@
 	objectVersion = 51;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 6B2B7DF197DF6A7CA487150557230A41 /* Build configuration list for PBXAggregateTarget "SwiftFormat" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = SwiftFormat;
-			productName = SwiftFormat;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA4E912AC89584AF8C940774A744DC /* ParameterEncoding.swift */; };
 		0DC716D6A630FAC820D9EA7E6F36EDF4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BB05941C83F15D1E59F13BCDCD32D /* Placeholder.swift */; };
@@ -80,26 +67,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11E490CF1B5A699AB3D80A47D06CA7A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CD0618C486973D5588EF20D2E8C0AEA;
-			remoteInfo = SwiftFormat;
-		};
 		31C4EADAE4FEC2C952E0ABC403404E99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
-		};
-		454047539AC942885AE8B5B36AC7ACC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CD0618C486973D5588EF20D2E8C0AEA;
-			remoteInfo = SwiftFormat;
 		};
 		52E3F9093067BF06DEB96D25A6E03D17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -540,7 +513,6 @@
 			dependencies = (
 				738C89058BE693CF9FFE784DC36CB99F /* PBXTargetDependency */,
 				ADFBD041888B0C9D57034B79F5C12206 /* PBXTargetDependency */,
-				AD933B50B5EE511230D9E20439445213 /* PBXTargetDependency */,
 			);
 			name = "Pods-pg5600-exam";
 			productName = "Pods-pg5600-exam";
@@ -561,7 +533,6 @@
 			dependencies = (
 				C28D72B62077593A441F1DBBE1870EC7 /* PBXTargetDependency */,
 				C554FE1DB5B89F99B2653E17194FBD45 /* PBXTargetDependency */,
-				3CDC5E1B8B84B13C7C1964EE49818A1E /* PBXTargetDependency */,
 			);
 			name = "Pods-pg5600-exam-pg5600-examUITests";
 			productName = "Pods-pg5600-exam-pg5600-examUITests";
@@ -631,7 +602,6 @@
 				52FDF352751C98EB2BDA30B13F91C493 /* Pods-pg5600-exam */,
 				583083BA4642DEE5F65E43A1E8948ED5 /* Pods-pg5600-exam-pg5600-examUITests */,
 				377A2B6B31720FBB47BD8E4EB899C828 /* Pods-pg5600-examTests */,
-				1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */,
 			);
 		};
 /* End PBXProject section */
@@ -758,23 +728,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CDC5E1B8B84B13C7C1964EE49818A1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftFormat;
-			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
-			targetProxy = 454047539AC942885AE8B5B36AC7ACC5 /* PBXContainerItemProxy */;
-		};
 		738C89058BE693CF9FFE784DC36CB99F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = 31C4EADAE4FEC2C952E0ABC403404E99 /* PBXContainerItemProxy */;
-		};
-		AD933B50B5EE511230D9E20439445213 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftFormat;
-			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
-			targetProxy = 11E490CF1B5A699AB3D80A47D06CA7A7 /* PBXContainerItemProxy */;
 		};
 		ADFBD041888B0C9D57034B79F5C12206 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -979,22 +937,6 @@
 			};
 			name = Release;
 		};
-		61D16562C88F67A248B236668FAC8E96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1091,21 +1033,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A8A39F86ED80874B567AC60703BA6FA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1348,15 +1275,6 @@
 			buildConfigurations = (
 				C7DE079FAC9C0121310CC2719520437F /* Debug */,
 				24430E4EE12EF93D757BC93F58EAD5E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6B2B7DF197DF6A7CA487150557230A41 /* Build configuration list for PBXAggregateTarget "SwiftFormat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8A39F86ED80874B567AC60703BA6FA1 /* Debug */,
-				61D16562C88F67A248B236668FAC8E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
