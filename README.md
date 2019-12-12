@@ -4,7 +4,9 @@ This is a half finished project, where I decided to prioritize to finish feature
 
 ## Complete features:
 Top 50 albums
+
 Detailed album page
+
 Favorite tracks list with the ability to add/remove tracks.
 
 ## Not completed features:
