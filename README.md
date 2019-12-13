@@ -1,18 +1,17 @@
 # PG5600 iOS programmering
 
-This is a half finished project, where I decided to prioritize to finish features that was the most important (in my assumption). Not really sure whats supposed to be written here, as it asks for comments and assumptions. Instances where code was taken directly/small modification is sourced, whereas explainations and examples that was used to get a understanding of how something worked is not sourced.
+This is a half finished project, where I decided to prioritize to finish features that was the most important (in my assumption). Not really sure whats supposed to be written here, as it asks for comments and assumptions. Instances where code was taken directly/small modification is sourced, whereas explainations and examples that was used to get a understanding of how something worked is not sourced. 
 
 ## Complete features:
 Top 50 albums
 
 Detailed album page
 
-Favorite tracklist with the ability to add/remove tracks.
+Different presentation of same data
+
+Favorite tracklist with the ability to add/remove tracks
 
 ## Not completed features:
-Different presentation of same data:
-Not completed, segmented control added, but not enabled as there is no functionality.
-
 Search
 View and navigation exists, but no functionality implemented.
 
